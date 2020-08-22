@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>我的简历</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #eee;
+        margin: 20px 0;
+      }
+
+      article {
+        width: 21cm;
+        min-height: 29.7cm;
+        background: white;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 1em;
+      }
+    </style>
+    <style media="print">
+      body {
+        margin: 0;
+      }
+
+      .page2 {
+        page-break-before: always;
+        margin-top: 30px;
+      }
+    </style>
+    <style>
+      body {
+      }
+
+      p {
+        margin: 0.3em 0;
+      }
+
+      h1 {
+        font-size: 25px;
+        margin-top: 0;
+      }
+
+      h4,
+      h5,
+      h6 {
+        font-weight: normal;
+      }
+
+      ol,
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      strong {
+        font-weight: normal;
+        color: #f60;
+      }
+
+      a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px solid;
+      }
+
+      p,
+      li {
+        color: #666;
+      }
+
+      strong {
+        font-weight: normal;
+      }
+
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+
+      .bio {
+        position: relative;
+      }
+
+      .bio img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    </style>
+
+    <style>
+      .projects {
+      }
+
+      .projects p {
+        color: #666;
+      }
+
+      .projects strong {
+        color: #f60;
+      }
+
+      .projects > ol {
+        margin-top: 0;
+        list-style-position: inside;
+        padding: 0;
+      }
+
+      .projects > ol > li {
+        margin-bottom: 24px;
+      }
+
+      .projects > ol > li > header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .projects > ol > li h3 {
+        display: inline-block;
+      }
+    </style>
+    <style>
+      .skills {
+      }
+
+      #skills {
+        width: 500px;
+        height: 270px;
+      }
+      @media print {
+        #skills {
+          display: none;
+        }
+      }
+
+      .skills > .wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .skills > .wrapper > :first-child {
+        margin-right: 24px;
+      }
+
+      .skills > .wrapper > #skills {
+      }
+
+      .skills > .wrapper > ul {
+        color: #666;
+      }
+
+      .skills > .wrapper strong {
+        color: #f60;
+      }
+
+      .skills > .wrapper > ul > li {
+        line-height: 1.2;
+        margin-bottom: 8px;
+      }
+    </style>
+    <style>
+      .openSource {
+      }
+
+      .openSource > h2 {
+      }
+
+      .openSource header img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .openSource > ul {
+      }
+
+      .openSource > ul > li {
+        margin-bottom: 24px;
+      }
+
+      .openSource header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .openSource h3 {
+      }
+    </style>
+    <style>
+      .jobs {
+      }
+
+      .jobs > h2 {
+      }
+
+      .jobs > ol {
+      }
+
+      .jobs > ol > li {
+        margin: 12px 0;
+      }
+
+      .jobs header {
+        display: flex;
+        color: #666;
+        margin-bottom: 12px;
+      }
+
+      .jobs header > h3 {
+        font-size: 18px;
+        color: #333;
+      }
+
+      .jobs header > h4 {
+        margin-left: 1em;
+        font-size: 18px;
+      }
+
+      .jobs header > span {
+        font-size: 18px;
+        margin-left: auto;
+      }
+    </style>
+
+    <style>
+      @media (max-width: 500px) {
+        body {
+          margin: 0;
+        }
+
+        article {
+          width: auto;
+          height: auto;
+        }
+
+        .bio img {
+          display: none;
+        }
+
+        .skills .wrapper {
+          flex-direction: column;
+        }
+
+        #skills {
+          width: auto;
+        }
+        .jobs header {
+          flex-direction: column;
+        }
+        .jobs header > h3,
+        .jobs header > h4,
+        .jobs header > span {
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <section class="bio">
+        <h1>杨蓉</h1>
+        <img src="./images/yr.png" alt="" width="100" height="100" />
+        <p>
+          女 | 22岁 | 前端开发工程师 |西安
+        </p>
+        <p>
+          手机：<a href="tel:13201684507">13201684507</a> | 微信：y1941236718 |
+          邮箱：
+          <a href="mailto:rong6147855@foxmail.com">rong6147855@foxmail.com</a>
+        </p>
+      </section>
+
+      <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>绿豆记账</h3>
+              <span>
+                <a href="https://github.com/rong6147855/Ledger">源码链接</a>
+                <a href="https://rong6147855.github.io/Ledger-website/"
+                  >项目预览</a
+                >
+                <a href="https://juejin.im/post/6858991801563349006">项目报告</a>
+              </span>
+            </header>
+            <p>
+              这个记账应用的特点是一键极速记账，为了满足自己的日常需求而开发
+            </p>
+            <p>
+              实现了账单添加、账单编辑、账单统计等功能
+            </p>
+            <p>
+              绿豆记账是一款移动端记账应用，也是一款基于 <strong>Vue</strong> / <strong>Vue Router</strong> /<strong>Vuex</strong> /<strong>TypeScript</strong> /
+             的<strong>单页面应用</strong>
+            </p>
+            <p>
+                绿豆记账由本人<strong>独立实现</strong>，设计稿借鉴鲨鱼记账App。
+            </p>
+            
+            <p>
+            项目中熟悉了TypeScript的基础语法，源代码几乎完全用<strong>Type Script</strong> 实现，用到了<strong>装饰器语法</strong>，以及Class风格的Vue组件编写
+            </p>
+            <p>
+              使用<strong>LocalStorage</strong>实现了应用数据的本地存储功能
+            </p>
+            <img src="./images/jizhang.png" alt="" width="100" height="100" />
+          </li>
+          <li>
+            <header>
+              <h3>小程序-小七翻译</h3>
+              <span>
+                <a href="https://juejin.im/post/6863830765679951886">项目报告</a>
+              </span>
+            </header>
+            <p>
+              本项目是一款<strong>小程序翻译工具</strong>
+            </p>
+            <p>
+            支持中，英，日，韩，法，西班牙，阿拉伯，泰，希腊，瑞典，保加利亚等等<strong>多国国家语言的互翻</strong>。
+            </p>
+            <p>具备<strong>客服服务功能</strong>，可以及时收到用户反馈并解答用户的问题。
+            </p>
+            <p>
+              该工具还能<strong>保存用户翻译记录</strong>以便以后查看。
+            </p>
+            <img src="./images/xiaoqi.jpg" alt="" width="100" height="100" />
+          </li>
+            <li>
+              <header>
+                <h3>CSS动画-会动的皮卡丘</h3>
+                <span>
+                  <a href="https://github.com/rong6147855/pikachu">源码链接</a>
+                  <a href="https://rong6147855.github.io/pikachu/src/test.html"
+                    >项目预览</a>
+                </span>
+              </header>
+              <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+             <p>实现代码滚动，动画随代码运行实时预览的观赏效果</p>
+              <img src="./images/pikaqiu.png" alt="" width="100" height="100" />
+            </li>
+            <li>
+              <header>
+                <h3>影视导航网站</h3>
+                <span>
+                  <a href="https://github.com/rong6147855/ysnv">源码链接</a>
+                  <a href="https://rong6147855.github.io/ysnv/src/index.html"
+                    >项目预览</a>
+                </span>
+              </header>
+              <p>这是根据日常需求，完成的一个影视导航网站
+              </p>
+              <p>
+                集齐了日常所需的各种娱乐视频平台，可以不用下载就随意切换各个平台，具备搜索功能，也可根据自己的喜好，增加或删除常用的网页，让你体验轻便生活。</p>
+              <img src="./images/daohang.png" alt="" width="100" height="100" />
+            </li>
+        </ol>
+      </section>
+
+      <section class="skills">
+        <h2>专业技能</h2>
+        <div class="wrapper">
+          <ul>
+                <li>能够使用 <strong> HTML5 </strong> 和 <strong> CSS3 </strong> 进行符合Web标准的<strong>语义化</strong>页面的开发，具有还原设计稿的能力</li>
+                <li>会使用<strong>SCSS</strong>, <strong>文档流</strong>，<strong>盒模型</strong>, <strong>float/flex/grid</strong>布局定位</li>
+                <li>掌握<strong>ES6</strong>的使用，包括<strong> let</strong>/ <strong> const </strong> /<strong> 箭头函数 </strong>/ <strong> Promise</strong>/ <strong>import export </strong></li>
+                <li>熟悉<strong>JavaScript/TypeScript语言</strong>，掌握 <strong> 闭包 </strong>/<strong> 响应式原理 </strong> /<strong> this </strong>/ <strong> Promise </strong></li>
+                <li>熟悉<strong>Vue</strong>全家桶的使用，包括 <strong>VueCli</strong> / <strong>Vuex</strong> / <strong>Vue-router</strong> 等技术栈，并了解一些框架的底层原理</li>
+                <li>熟悉<strong>React</strong>全家桶的使用，包括<strong>create-react-app</strong> / <strong>React-Redux</strong> / <strong>React-Router</strong> / <strong>Hooks API</strong> 的使用</li>
+                <li>了解<strong> DOM操作 </strong>/ <strong>事件委托  </strong> 
+                  <li>
+                    熟悉<strong>前后端分离</strong>技术，包括<strong>跨域</strong> / <strong>同源策略</strong> / <strong> JSONP </strong>/ <strong> CORS </strong> / <strong>前端路由</strong>
+                  </li>
+                <li>熟悉版本管理工具<strong>  Git </strong>命令的的使用， 掌握<strong>GitHub</strong>工作部署流程</li>
+                <li>有<strong> node.js </strong>的使用经验</li>
+                <li>掌握<strong> HTTP协议</strong>相关知识,包括<strong>HTTP缓存</strong>/ <strong>GET/Post</strong>/ <strong> Cookie </strong>/ <strong> Session </strong>等</li>
+            <li>了解 <strong>Webpack 的配置和优化</strong>以及<strong>MVC模式</strong></li>
+          <li>熟悉PC与移动端的开发与适配，了解 <strong>微信小程序开发</strong></li>
+        <li>熟悉<strong>Markdown</strong>语法，能用其编写技术文档</li>  
+        <li>熟悉<strong>LocalStorage /SessionStorage /Cookie</strong>等数据存储技术
+       <li>熟悉<strong>jQuery</strong>工具库的使用 </li>
+        </li>
+        </ul>
+        </div>
+      </section>
+
+      <section class="openSource">
+        <h2>开源项目</h2>
+        <ul>
+          <li>
+            <header>
+              <h3>自己写的 DOM 库</h3>
+              <a href="https://github.com/rong6147855/DOM-library">源码链接</a>
+            </header>
+            <p>
+              实现了<strong>元素选择</strong>、<strong>元素创建</strong>、<strong>事件委托</strong>等常见功能
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="jobs">
+        <h2>教育背景</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>西安工业大学北方信息工程学院</h3>
+              <h4>计算机科学与技术专业 本科</h4>
+              <span><time>2017年9月</time>~<time>2021年7月</time></span>
+            </header>
+            <ul>
+              <li>
+                课程学习:
+                C++高级编程 | 操作系统 | 计算机网络 | 数据库原理及应用 | 微机原理与接口技术 | 网页设计基础 | 软件工程 | .NET技术 | 单片机原理 | Linux操作系统 | 高级路由及交换技术 | 电子技术基础 | 概率与数理统计 | 计算机组成原理 | 数据结构 | 面向对象技术 |
+              </li>
+      </section>
+
+      <section class="others">
+        <h2>其他链接</h2>
+        <ul>
+          <li>
+            <a href="https://www.zhihu.com/people/yangrong-40-34/posts"
+              >我的博客</a
+            >，目前已有 32 篇技术文章
+          </li>
+          <li>
+            <a href="https://github.com/rong6147855?tab=repositories"
+              >我的 GitHub</a
+            >
+          </li>
+        </ul>
+      </section>
+    </article>
+    <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
